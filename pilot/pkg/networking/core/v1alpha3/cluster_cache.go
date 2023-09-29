@@ -34,6 +34,9 @@ var (
 
 // clusterCache includes the variables that can influence a Cluster Configuration.
 // Implements XdsCacheEntry interface.
+// clusterCache struct  инкапсулирует все данные, необходимые для создания кластера Envoy для прокси и службы. 
+// Метод Key() хеширует эти поля для создания уникального ключа кэша.
+
 type clusterCache struct {
 	clusterName string
 
