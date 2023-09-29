@@ -32,8 +32,8 @@ var (
 	Slash     = []byte{'/'}
 )
 
-// clusterCache includes the variables that can influence a Cluster Configuration.
-// Implements XdsCacheEntry interface.
+// clusterCache включает переменные, которые могут влиять на конфигурацию кластера Cluster Configuration.
+// Реализует интерфейс XdsCacheEntry.
 // clusterCache struct  инкапсулирует все данные, необходимые для создания кластера Envoy для прокси и службы. 
 // Метод Key() хеширует эти поля для создания уникального ключа кэша.
 
